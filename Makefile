@@ -3,7 +3,7 @@
 # Configuration
 LATEX = xelatex
 BIBER = biber
-MAIN = ordinary-heads-for-english-determinatives
+MAIN = fusion-of-functions-revisited
 PDF_BASENAME ?= $(MAIN)
 SUBMISSION_PDF = $(PDF_BASENAME).pdf
 OUTDIR = .

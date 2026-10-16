@@ -1,11 +1,11 @@
 # CLAUDE.md
-<!-- SUMMARY: Agent guidance for Ordinary heads for English determinatives; deliberately short, points at the portfolio rules rather than copying them · status: active · updated: 2026-09-02 -->
+<!-- SUMMARY: Agent guidance for Fusion of functions revisited: Independent determinatives in English; deliberately short, points at the portfolio rules rather than copying them · status: active · updated: 2026-09-02 -->
 
 Guidance for Claude Code, Codex, and other agents working in this repository.
 
 ## Project
 
-Academic paper: **Ordinary heads for English determinatives**, by Brett Reynolds.
+Academic paper: **Fusion of functions revisited: Independent determinatives in English**, by Brett Reynolds.
 
 ## This file is deliberately short
 
@@ -36,12 +36,12 @@ XeLaTeX, not pdfLaTeX (font requirements). Avoid LuaLaTeX: it runs words
 together in the PDF text layer, breaking copy-paste and accessibility.
 
 ```bash
-make              # full build: ordinary-heads-for-english-determinatives.pdf
+make              # full build: fusion-of-functions-revisited.pdf
 make quick        # single pass
 make clean        # clean artifacts
 ```
 
-The manuscript is `ordinary-heads-for-english-determinatives.tex` and builds `ordinary-heads-for-english-determinatives.pdf`; don't rename it
+The manuscript is `fusion-of-functions-revisited.tex` and builds `fusion-of-functions-revisited.pdf`; don't rename it
 `main.tex` (canon: meaningful-file-names-not-main). Set `PDF_BASENAME` when a venue
 wants a specific upload name, e.g. `PDF_BASENAME = Reynolds-Short-Title`.
 
@@ -53,8 +53,8 @@ to send it.
 ## Layout
 
 ```
-ordinary-heads-for-english-determinatives/
-├── ordinary-heads-for-english-determinatives.tex         # the manuscript
+fusion-of-functions-revisited/
+├── fusion-of-functions-revisited.tex         # the manuscript
 ├── references.bib            # symlink to the central bibliography
 ├── references-local.bib      # project-specific entries; /push-bib merges these
 ├── .canon-stamp              # what this paper has been reconciled against
@@ -83,7 +83,7 @@ A cover letter or a portal copy-paste sheet is not a substitute for any of these
 checked against. To see whether it has fallen behind:
 
 ```bash
-python3 ../../Project-Management/tools/canon_drift.py --project papers/ordinary-heads-for-english-determinatives
+python3 ../../Project-Management/tools/canon_drift.py --project papers/fusion-of-functions-revisited
 ```
 
 Or `/canon-drift`. Where a commitment doesn't apply to this paper, dismiss it in
