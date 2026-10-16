@@ -52,6 +52,8 @@ Their positive arguments are mostly against conversion (Günther §2.3; Kester �
 
 §10 concedes that a silent noun explains the missing possessive (*\*some's*; Pullum 1975: 175–176). If antecedent-anaphoric fused heads, which are silent-headed on all four accounts, take the genitive freely, that explanation fails, and the gap belongs to independent determinatives and the generic Human construction specifically. **From memory, unverified:** *the latter's*, *the former's*, *the other's* are common. CGEL (p. 420) says fused heads "either cannot occur in the genitive at all or do so only very rarely" and lists *\*all's*, *\*many's*, *\*few's*, *\*some's*, with *each's* "occasionally attested". Proposed hand queries (COCA): `the latter 's`, `the former 's`, `the other 's`, controls `the poor 's`, `the rich 's`.
 
+**Result (16 Oct, same day).** Brett ran them: 498 lines, with genitives on *the latter* 149, *the former* 31, *the other* 253, *the poor* 8 (five in ACAD/MAG), *the rich* 3 (web only). Record and bearing are in the evidence repository, `corpus/genitive/2026-10-16-brett-supplied-anaphoric-fused-genitives.md`. Follow-up queries are proposed there.
+
 ## Bibliographic discrepancy
 
-Pullum 1975: Saab and Günther both cite *Working Papers in Linguistics* 14: 95–101; the OSU Knowledge Bank record (hdl 1811/81357) gives OSU WPL 18: 173–180, which is what `references-local.bib` has. Check the scan's front matter before /push-bib.
+Pullum 1975: Saab and Günther both cite *Working Papers in Linguistics* 14: 95–101; the OSU Knowledge Bank record (hdl 1811/81357) gives OSU WPL 18: 173–180, which is what `references-local.bib` has. Checked 16 Oct: the scan's header reads "OSU WPL 18.172-183 (1975)", and the article's printed pages run 173–180, so the bib entry stands. The scan also confirms Pullum stars *the poor's* ((6b), p. 176).
