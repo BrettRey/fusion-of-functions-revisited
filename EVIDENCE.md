@@ -15,7 +15,7 @@ This paper keeps no corpus data of its own. The records are in the evidence repo
 | *Every has a story* (*Patch*, 2025) | §9 (Table) | `quantifier-controls.pdf` |
 | *[be] all the better*, 90 tokens | §9 | `corpus/independent_argument/2026-10-15-brett-supplied-all-the-better.md` |
 | *some heaps better photo's*, *some lots better ones* | §9 | footnote links; `quantifier-controls.pdf` |
-| Genitives on fused heads: *the latter's*, *the former's* common; *each's*, *either's*, *neither's*, *the poor's* in edited prose; none on *the few* (498 + 70 COCA lines, 16 Oct; query strings to confirm) | §4, §7, §10, §11 | `corpus/genitive/2026-10-16-brett-supplied-anaphoric-fused-genitives.md` |
+| Genitives on fused heads: *the latter's*, *the former's* common; *each's*, *either's*, *neither's*, *the poor's* in edited prose; none on *the few* (COCA, 16 Oct: `the latter/former/other/poo...`, 498 lines shown; `the few/many 's`; `each/either/neither 's`) | §4, §7, §10, §11 | `corpus/genitive/2026-10-16-brett-supplied-anaphoric-fused-genitives.md` |
 | Search strings and dates for the 15 and 16 October searches | all | `corpus/2026-10-15-search-history.md` |
 
 Design notes for the arguments tested and dropped (the constituency test, the inventory of repairs as a section) are in `notes/split/2026-10-15-tests-2-and-3.md` in the same repository. Reading notes on Payne, Huddleston & Pullum (2007) are in this repository: `notes/2026-10-15-payne-huddleston-pullum-2007.md`.
