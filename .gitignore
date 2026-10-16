@@ -13,3 +13,8 @@
 
 # macOS
 .DS_Store
+
+# Private review runs (external model outputs, Primus deliverable); kept local, stripped from history 2026-10-16
+reviews/
+# Tool working directory
+.freebuff/
