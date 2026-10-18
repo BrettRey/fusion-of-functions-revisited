@@ -1,5 +1,5 @@
 # Section notes for the rewrite
-<!-- SUMMARY: what each drafted section assumes from sections not yet written; update as sections land · status: all sections and the abstract drafted, reviewed, and read by Brett; assembled in the main file 18 Oct; next: the full read and trim · updated: 2026-10-18 -->
+<!-- SUMMARY: what each drafted section assumes from sections not yet written; update as sections land · status: all sections and the abstract drafted, reviewed, and read by Brett; assembled in the main file 18 Oct; external-review decisions drafted 18 Oct (DP-internal *a* in §4 with Figure 3 redrawn; criterion as a standard of evidence in §2 and §6, with §1, abstract, §3, §7, §8 aligned; Gisborne in §7), not yet read by Brett; about 15,200 words with references, so the trim must cut at least 500; next: Brett's read of the changed passages, then the full read and trim · updated: 2026-10-18 -->
 
 Workflow: one section at a time, in the order §3, §4, §2, §6, §5, §1 with the abstract, then §8. Each section ends with a muse review (run in `reviews/muse-sec<N>-<timestamp>/`), Claude's triage, then Brett's read.
 
