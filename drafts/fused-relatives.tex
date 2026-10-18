@@ -11,61 +11,118 @@
 
 \section{Fused relatives: where the second function shows}\label{sec:fused-relatives}
 
-\textcite[571]{Payne2007} list the dependents that fusion involves in English as \enquote{determiner, modifier and, in fused relative clauses, subject or prenucleus}. Sections~\ref{sec:det-head} and~\ref{sec:mod-head} found nothing in the form of Det--Head or Mod--Head expressions that shows a second function. Fused relatives are the remaining test. \textit{CGEL} brings fusion to them in so many words: \enquote{we invoke the same concept of functional fusion in our analysis of fused relatives} \citep[1073]{huddleston2002}.\footnote{Transparent free relatives, as in \mention{He made what may appear to be a radically new proposal} \citep[248]{grosu-2003-unified-theory-tfrs}, raise different questions and are set aside here \citep{grosu-2003-unified-theory-tfrs,grosu-2016-semantics-syntax-morphology-tfrs}.}
+\textcite[571]{Payne2007} list the dependents that fusion involves in English as \enquote{determiner, modifier and, in fused relative clauses, subject or prenucleus}. Sections~\ref{sec:det-head} and~\ref{sec:mod-head} found nothing in the form of Det--Head or Mod--Head expressions that shows a second function. Fused relatives are the remaining test. \textit{CGEL} brings fusion to them in so many words: \enquote{we invoke the same concept of functional fusion in our analysis of fused relatives} \citep[1073]{huddleston2002}.\footnote{Transparent free relatives, as in \mention{He made \bk{what may appear to be a radically new proposal}} \citep[248]{grosu-2003-unified-theory-tfrs}, raise different questions and are set aside here \citep{grosu-2003-unified-theory-tfrs,grosu-2016-semantics-syntax-morphology-tfrs}.}
 
 \ea\label{ex:fr}
-\ea \mention{I spent whatever he gave me.} \citep[1068]{huddleston2002}
-\ex \mention{Whoever told you that can't have read the report carefully.} (p.~1076)
-\ex \mention{I'll go wherever you go.} (p.~1068)
+\ea \mention{I spent \bk{whatever he gave me}.} \citep[1068]{huddleston2002}
+\ex \mention{\bk{Whoever told you that} can't have read the report carefully.} (p.~1076)
+\ex \mention{I'll go \bk{wherever you go}.} (p.~1068)
 \z\z
 
-In (\ref{ex:fr}a), \mention{whatever} is head of the object NP and prenucleus of the relative clause, with a gap after \mention{gave me} \citep[1073]{huddleston2002}. In (\ref{ex:fr}b), \mention{whoever} is head of the subject NP and also the subject of \mention{told you that}, which \textcite[579 n.~16]{Payne2007} call fused Head--Subject. The criterion asks whether the function inside the relative clause shows in form.
+In (\ref{ex:fr}a), \mention{whatever} is head of the object NP and prenucleus of the relative clause, with a gap after \mention{gave me} (\citealp[1073]{huddleston2002}; Figure~\ref{fig:fusedrel}a). In (\ref{ex:fr}b), \mention{whoever} is head of the subject NP and also the subject of \mention{told you that}, which \textcite[579 n.~16]{Payne2007} call \enquote{fused head-subject}. The criterion asks whether the function inside the relative clause shows in form.
 
-Ordinary Head is available here too. \mention{Whomever I see} could be an NP headed by \mention{whomever} and modified by a bare relative, just as \mention{person} heads \mention{the person I see}. Put in \textit{CGEL}'s terms, it's the analysis \textcite{bresnan1978free} proposed: the relativized phrase heads the whole NP, and \enquote{there is no fronted element in the relative clause} \citep[578]{Payne2007}. It needs nothing beyond ordinary Head and a kind of relative clause the grammar already has, and I'll call it the head analysis.
+Ordinary Head is available here too. \mention{Whomever I see} could be an NP headed by \mention{whomever}, with a bare relative as modifier in its nominal, just as \mention{person} heads \mention{the person I see}. Put in \textit{CGEL}'s terms, it's the analysis \textcite{bresnan1978free} proposed: the relativized phrase heads the whole NP, and \enquote{there is no fronted element in the relative clause} \citep[578]{Payne2007}. It needs nothing beyond ordinary Head and a kind of relative clause the grammar already has, and I'll call it the head analysis (Figure~\ref{fig:fusedrel}b).
+
+\begin{figure}[H]
+\centering
+\begin{minipage}[t]{.52\linewidth}\centering
+(a) \mention{whatever he gave me}, fusion\par\smallskip
+\begin{forest} nominal tree
+[NP
+ [{\synnode{Head}{Nom}}, head edge, calign=first, l sep=9mm
+  [{\synnode{Head--Prenucleus}{NP\textsubscript{i}}}, head edge, tier=nucleus,
+   tikz={\draw[-] (crelA.south) -- (.north);}
+   [\mention{whatever}]]
+  [{\synnode{Mod}{Clause\textsubscript{REL}}}, name=crelA, l sep=9mm
+   [{\synnode{Nucleus}{Clause}}, head edge, tier=nucleus
+    [{\synnode{Subj}{NP}} [\mention{he}]]
+    [{\synnode{Predicate}{VP}}, head edge
+     [{\synnode{Head}{V}}, head edge [\mention{gave}]]
+     [{\synnode{Obj\textsubscript{ind}}{NP}} [\mention{me}]]
+     [{\synnode{Obj\textsubscript{dir}}{GAP\textsubscript{i}}} [--]]]]]]]
+\end{forest}
+\end{minipage}\hfill
+\begin{minipage}[t]{.46\linewidth}\centering
+(b) \mention{whatever he gave me}, head analysis\par\smallskip
+\begin{forest} nominal tree
+[NP
+ [{\synnode{Head}{Nom}}, head edge
+  [{\synnode{Head}{NP\textsubscript{i}}}, head edge [\mention{whatever}]]
+  [{\synnode{Mod}{Clause\textsubscript{REL}}}
+   [{\synnode{Subj}{NP}} [\mention{he}]]
+   [{\synnode{Predicate}{VP}}, head edge
+    [{\synnode{Head}{V}}, head edge [\mention{gave}]]
+    [{\synnode{Obj\textsubscript{ind}}{NP}} [\mention{me}]]
+    [{\synnode{Obj\textsubscript{dir}}{GAP\textsubscript{i}}} [--]]]]]]
+\end{forest}
+\end{minipage}
+\caption{A fused relative under fusion (a), following \textit{CGEL}'s tree for \mention{what she wrote} (p.~1073), and under the head analysis (b). In (a) the NP \mention{whatever} has two parents, the nominal it heads and the relative clause in which it's the prenucleus, linked to the gap. In (b) the NP heads the nominal, outside the bare relative clause that is its modifier. Thick lines join heads to their parents, the nucleus counting as head of the relative clause. Other NPs are shown without their structure, as in \textit{CGEL}'s tree.}\label{fig:fusedrel}
+\end{figure}
 
 Much comes out the same. The evidence that fused relatives are NPs holds on either: agreement, subject--auxiliary inversion, no extraposition, no fronted preposition, and the functions of NPs \citep[1068--1070]{huddleston2002}. So does what the literature calls matching, in which the relativized phrase's category suits \enquote{categorial selection both in the matrix clause and in the relative clause} \citep[349]{vanriemsdijk-2006-free-relatives}. \textcite[336--338]{bresnan1978free} derive the match with the matrix from headedness, since a phrase has the category of its head, and on either analysis the match with the gap comes from the relative clause. So category matching doesn't separate the two analyses. Three other properties do.
 
-First, bare relatives can't relativize their subject. \textit{CGEL} contrasts \mention{The car I took was Ed's} with \ungram{\mention{The car hit us was Ed's}}, and the restriction holds whatever the head: {!}\mention{Anyone wants this can have it} is non-standard \citep[1055]{huddleston2002}.\footnote{The mark {!} is \textit{CGEL}'s, for a form it treats as non-standard.} \mention{Anyone} is a compound determinative, and on the analysis of Section~\ref{sec:det-head} it functions as ordinary Head. So that example has the head analysis's own structure, and it fails. Holding the frame constant gives the same contrast with a fused relative:
+First, in standard English bare relatives can't relativize their subject. \textit{CGEL} contrasts \mention{\bk{The car I took} was Ed's} with \ungram{\mention{\bk{The car hit us} was Ed's}}, and the restriction holds whatever the head: \nonstd{\mention{\bk{Anyone wants this} can have it}} is non-standard \citep[1055]{huddleston2002}.\footnote{The mark \judgmark{!} is \textit{CGEL}'s, for a form it treats as non-standard.} \mention{Anyone} is a compound determinative, and it heads its NP whether it's an ordinary Head (Section~\ref{sec:det-head}) or a fused determiner-head. So that example has the head analysis's structure, a head with a bare relative, and it fails. Holding the frame constant gives the same contrast with a fused relative:
 
 \ea\label{ex:subj}
-\ea \mention{I will do business with whichever of them comes up with the cash.} \citep[579 n.~16]{Payne2007}
-\ex {!}\mention{I will do business with any of them comes up with the cash.}
-\ex \mention{I will do business with whichever of them you recommend.}
-\ex \mention{I will do business with any of them you recommend.}
+\ea \mention{I will do business with \bk{whichever of them comes up with the cash}.} \citep[579 n.~16]{Payne2007}
+\ex \nonstd{\mention{I will do business with \bk{any of them comes up with the cash}.}}
+\ex \mention{I will do business with \bk{whichever of them you recommend}.}
+\ex \mention{I will do business with \bk{any of them you recommend}.}
 \z\z
 % (b)--(d) constructed; judgments confirmed by Brett, 17 Oct 2026.
 
-With an object gap, \mention{any of them} takes a bare relative freely (\ref{ex:subj}d), so only the relativized subject separates (\ref{ex:subj}a) from (\ref{ex:subj}b). On the fused analysis, \mention{whichever of them} is itself the subject of \mention{comes up with the cash}. The clause has no subject gap, and the restriction doesn't apply. The head analysis has to give relative words a licence that the restriction withholds from every other head.
+With an object gap, \mention{any of them} takes a bare relative freely (\ref{ex:subj}d), so only the relativized subject separates (\ref{ex:subj}a) from (\ref{ex:subj}b). On the fused analysis, \mention{whichever of them} is itself the subject of \mention{comes up with the cash}.\footnote{On \textit{CGEL}'s analysis, \mention{whichever} is fused twice here. Inside its own NP it's a fused determiner-head \citep[398]{huddleston2002}, and that NP is fused head and subject in the relative construction, which Payne et al.\ count as \enquote{multiple instances of fused functions} (p.~579 n.~16). Bare \mention{whichever} in \mention{I'll take \bk{whichever he gave me}} is fused twice in the same way, with head and prenucleus. Ordinary Head removes the inner fusion, which shows nothing in form (Section~\ref{sec:det-head}), and keeps the outer one, which does (Figure~\ref{fig:fusedrelthis}).} The clause has no subject gap, and the restriction doesn't apply. The head analysis has to give relative words a licence that the restriction withholds from every other head.
 
-Second, ordinary heads take infinitival relatives without a relative word, as in \mention{something interesting (for us) to read} \citep[1067]{huddleston2002}, but a fused relative can't be infinitival: \ungram{\mention{I can't afford what to buy}} (p.~1073). \textcite[364, 378]{kim-2017-free-relatives} also stars \mention{He is still wearing what to wear to bed} and \mention{Tom will do whatever to satisfy her}.
+Second, ordinary heads take infinitival relatives without a relative word, as in \mention{something interesting \pn{for us} to read} \citep[1067]{huddleston2002}, but a fused relative can't be infinitival: \ungram{\mention{I can't afford \bk{what to buy}}} (p.~1073). \textcite[364, 378]{kim-2017-free-relatives} also stars \mention{He is still wearing \bk{what to wear to bed}} and \mention{Tom will do \bk{whatever to satisfy her}}.
 
-The head analysis predicts \mention{what to buy} to be as good as \mention{something to buy}. On the fused analysis, \mention{what} would be the relative phrase of an infinitival relative clause, and there \enquote{the relative phrase must consist of preposition + NP} (p.~1067), as in \mention{the ideal person in whom to confide}. The fused element of an NP fused relative is an NP, so it never qualifies.\footnote{\textit{CGEL} finds \enquote{no evident explanation} for that restriction (p.~1067), and the argument takes it as stated. \textit{CGEL} also says infinitival relatives with a relative phrase occur only as integrated relatives (p.~1067), which would exclude fused ones directly. The restriction on the relative phrase covers NP fused relatives without that statement. It doesn't cover a PP fused relative whose relative phrase is a preposition with an NP, as in \mention{I'll work in whichever city they want me to work} \citep[575]{Payne2007}. That \ungram{\mention{I'll work in whichever city to work}} is out too rests on the statement about integrated relatives.}
+The head analysis predicts \mention{what to buy} to be as good as \mention{something to buy}. On the fused analysis, \mention{what} would be the relative phrase of an infinitival relative clause, and there \enquote{the relative phrase must consist of preposition + NP} (p.~1067), as in \mention{the ideal person \bk{in whom} to confide}. The fused element of an NP fused relative is an NP, so it never qualifies.\footnote{\textit{CGEL} finds \enquote{no evident explanation} for that restriction (p.~1067), and the argument takes it as stated. \textit{CGEL} also says infinitival relatives with a relative phrase occur only as integrated relatives (p.~1067), which would exclude fused ones directly. The restriction on the relative phrase covers NP fused relatives without that statement. It doesn't cover a PP fused relative whose relative phrase is a preposition with an NP, as in \mention{I'll work \bk{in whichever city they want me to work}} \citep[575]{Payne2007}. That \ungram{\mention{I'll work \bk{in whichever city to work}}} is out too rests on the statement about integrated relatives.}
 % Brett, 17 Oct 2026: "I'll work in whichever city to work" is bad.
 
 Third, case. \textit{CGEL} names case as the form in which a second function would show (pp.~420, 1073--1074), and for fused relatives with \mention{who} and \mention{whoever} it states the requirement: the pronoun \enquote{has to satisfy the case requirements of both the relative clause and the matrix clause} (p.~1073).
 
 \ea\label{ex:case}
-\ea \mention{Whoever is responsible for the damage must pay for it.} \citep[1073--1074]{huddleston2002}
-\ex \mention{He will criticise whomever she brings home.}
-\ex \marg{\mention{Whomever he marries will have to be very tolerant.}}
-\ex \marg{\mention{She lunches with whomever is going her way after morning classes.}}
+\ea \mention{\bk{Whoever is responsible for the damage} must pay for it.} \citep[1073--1074]{huddleston2002}
+\ex \mention{He will criticise \bk{whomever she brings home}.}
+\ex \marg{\mention{\bk{Whomever he marries} will have to be very tolerant.}}
+\ex \marg{\mention{She lunches with \bk{whomever is going her way after morning classes}.}}
 \z\z
 
 In (\ref{ex:case}c), the relative clause calls for accusative and the matrix for nominative. In (\ref{ex:case}d) it's the reverse. \textit{CGEL} judges both \enquote{at best very questionable} (p.~1074).
 
 On the head analysis, \mention{whomever} stands outside the relative clause, so its form should answer to the matrix alone. That was the analysis's attraction for matching: the head \enquote{would automatically bear the case of the whole NP} \citep[578]{Payne2007}. It predicts (\ref{ex:case}c) to be degraded but not (\ref{ex:case}d). There \mention{whomever} is the object of \mention{with}, where accusative is the formal choice \citep[465--466]{huddleston2002}. The question mark on (\ref{ex:case}d) shows the subject function inside the relative clause.
 
-\textit{CGEL}'s two dialects for \mention{whom} point the same way. When \mention{who} is the subject of a clause embedded in a relative, as in {\%}\mention{those whom he thought were guilty}, Dialect~A takes its case from that function, and Dialect~B from its \enquote{prenuclear position preceding the subject of the relative clause} \citep[467]{huddleston2002}. Both rules look inside the relative clause, and the head analysis puts \mention{whomever} outside it.
+\textit{CGEL}'s two dialects for \mention{whom} point the same way. When \mention{who} is the subject of a clause embedded in a relative, as in \dialect{\mention{those \bk{whom} he thought were guilty}}, Dialect~A takes its case from that function, and Dialect~B from its \enquote{prenuclear position preceding the subject of the relative clause} \citep[467]{huddleston2002}. Both rules look inside the relative clause, and the head analysis puts \mention{whomever} outside it.
 
-Usage shows the same thing directly, as a preference. After a preposition the matrix function is the same in every token, so the head analysis predicts the same choice of form whatever follows. In COCA, \mention{whomever} has 395 of the 802 tokens (49\%) when a pronoun subject follows it, as in \mention{with whomever they \ldots}, but 352 of 2,458 (14\%) when a verb follows and the gap is the subject, as in \mention{to whomever is \ldots}.\footnote{COCA, searched by hand on 17 October 2026 with \texttt{[i*] who*ever [p*]} and \texttt{[i*] who*ever [v*]}. Tokens before \mention{it} are left out, because \mention{it} can be the subject of a clause whose gap is a predicative complement, as in \mention{whoever it is}; \mention{whomever} has 35 of those 180. The verb list shows only its 1,000 most frequent types, so its counts are lower bounds. The archaic forms divide the same way: \mention{whomsoever} and \mention{whosoever} have 21 and 2 tokens before a pronoun, 12 and 30 before a verb. In ordinary relatives with a subject gap, \mention{whom} is rare by comparison, with 390 tokens of \texttt{[nn*] whom [v*]} against 449,450 of \texttt{[nn*] who [v*]}, so most subject-gap tokens of \mention{whomever} owe their form to something outside the relative clause.}
+Usage shows the same thing directly, as a preference. After a preposition the matrix function is the same in every token, so the head analysis predicts the same choice of form whatever follows. In COCA, \mention{whoever} and \mention{whomever} occur after a preposition 802 times before a pronoun subject, as in \mention{with whomever they \ldots}, and \mention{whomever} has 395 of those (49\%). They occur there 2,458 times before a verb, where the gap is the subject, as in \mention{to whomever is \ldots}, and \mention{whomever} has 352 of those (14\%).\footnote{COCA, searched by hand on 17 October 2026 with \texttt{[i*] who*ever [p*]} and \texttt{[i*] who*ever [v*]}. Tokens before \mention{it} are left out, because \mention{it} can be the subject of a clause whose gap is a predicative complement, as in \mention{whoever it is}; of the 180 such tokens, \mention{whomever} has 35. The verb list shows only its 1,000 most frequent types, so its counts are lower bounds. The archaic forms divide the same way: \mention{whomsoever} and \mention{whosoever} have 21 and 2 tokens before a pronoun, 12 and 30 before a verb. In ordinary relatives with a subject gap, \mention{whom} is rare by comparison, with 390 tokens of \texttt{[nn*] whom [v*]} against 449,450 of \texttt{[nn*] who [v*]}, so most subject-gap tokens of \mention{whomever} owe their form to something outside the relative clause.}
 
 So the function inside the relative clause shows in the form, and the matrix function shows too, since (\ref{ex:case}c) is degraded although its relative clause calls for accusative. Fusion predicts that a clash has no fully acceptable form, which is what \textit{CGEL}'s question marks record. That clashes are attested all the same makes the double requirement a preference, so case favours fusion here rather than forcing it.\footnote{\textcite[357]{vanriemsdijk-2006-free-relatives} finds that case matching concerns \enquote{the actual morpho-phonological shape of the case form}: in German, where nominative and accusative \mention{was} have the same form, a mismatch of the abstract cases passes. Which function's case wins a clash varies across languages \citep[578]{Payne2007}.}
 
-\textit{CGEL} drew this analogy itself. Its explanation of the missing genitive in \ungram{\mention{many's}} is that the form's \enquote{case should match both functions}, and it points to \enquote{the discussion of case in fused relatives} (p.~420). For fused heads the requirement found no support, since \mention{everyone's}, \mention{either's}, and \mention{the poor's} occur (Sections~\ref{sec:det-head} and~\ref{sec:mod-head}). For fused relatives it shows, as a preference. On the diagnostic \textit{CGEL} itself chose, the two constructions come apart.
+\textit{CGEL} drew this analogy itself. Its explanation of the missing genitive in \ungram{\mention{many's expenses}} is that the form's \enquote{case should match both functions}, and it points to \enquote{the discussion of case in fused relatives} (p.~420). Among fused determiner-heads, the genitive divides the words: \mention{many's} is all but absent, but \mention{either's}, \mention{each's}, and \mention{everyone's} occur. That division follows the word, not the functions, which all these words share on \textit{CGEL}'s analysis (Section~\ref{sec:det-head}), and \mention{the poor's} puts the genitive on a fused modifier-head (Section~\ref{sec:mod-head}). In fused relatives the word stays the same and the form follows the function inside the relative clause, as a preference. On the diagnostic \textit{CGEL} itself chose, the two constructions come apart.
 
-\textit{CGEL} classes some fused relatives as PPs, as in \mention{I'll go wherever you go} (p.~1068), and \textcite[575]{Payne2007} add AdjPs and AdvPs, as in \mention{I'll be however responsive they want me to be}. The evidence above comes from NP fused relatives, and two of the three properties can't arise in these. None of these phrases is the subject of the relative clause, and none has case.
+\textit{CGEL} analyses some fused relatives as PPs, as in \mention{I'll go \bk{wherever you go}} (p.~1068), and \textcite[575]{Payne2007} add AdjPs and AdvPs, as in \mention{I'll be \bk{however responsive they want me to be}}. The evidence above comes from NP fused relatives. In the other types case can't arise, since none of these phrases has case, but the first property can. In \mention{\bk{Whenever suits you} is fine}, \mention{whenever} is the subject of \mention{suits}, so on the head analysis \mention{suits you} would be a bare relative with a subject gap.
 
-What these types do show is that no other construction puts a relative clause inside such a phrase, because \enquote{standard relative clauses are modifiers only within Nom} \citep[575]{Payne2007}. Both analyses need the clause there. Fusion has it as part of a construction it already has for NPs, and the head analysis needs a new kind of modifier for three categories. I take the licence to belong to the construction rather than to each category it comes in.\footnote{\textcite[351]{vanriemsdijk-2006-free-relatives} notes two restrictions on these types that neither analysis predicts: a strong bias toward the universally quantified reading, and degradation when the matrix and embedded verbs differ, as in \marg{\mention{I'll keep my bedroom however dark you paint your study}}.}
+These types also show that, on \textit{CGEL}'s analysis, no other construction puts a relative clause inside such a phrase, since \enquote{standard relative clauses are modifiers only within Nom} \citep[575]{Payne2007}, and yet both analyses need one there. On fusion, it belongs to one construction across the four categories, in which the head of the phrase is also the clause's prenucleus. On the head analysis, the NP type is an ordinary head with a relative clause in its nominal, and the other three need a relative clause as modifier in a PP, AdjP, or AdvP, which splits four types with similar properties (p.~575) in two. I take the licence to belong to the construction rather than to each category it comes in.\footnote{\textcite[351]{vanriemsdijk-2006-free-relatives} notes two restrictions on these types that neither analysis predicts: a strong bias toward the universally quantified reading, and degradation when the matrix and embedded verbs differ, as in \marg{\mention{I'll keep my bedroom \bk{however dark you paint your study}}}.}
 % Treatment A, Brett's decision, 17 Oct 2026.
 
-So the second function shows in form in three ways, two of them categorical and one graded. The head analysis can state each, but only by giving fused-relative words licences no other head has: subject relativization without a relative word, tensed form only, and a case set inside a clause the word isn't part of. Fusion gets all three from the rules for relative clauses that have a relative phrase.\footnote{A constructional analysis reaches the same double relation by another route. \textcite[376]{kim-2017-free-relatives} makes the free relative construction a subtype of both the head--filler and the head--modifier constructions, so the relativized phrase is at once head and filler.} So fusion is favoured here, though not forced. Fused relatives are the only construction in which this paper keeps it.
+So the second function shows in form in three ways, two of them categorical and one graded. The head analysis can state each, but only by giving fused-relative words licences no other head has: subject relativization without a relative word, tensed form only, and a case set inside a clause the word isn't part of. Fusion gets all three from the rules for relative clauses that have a relative phrase.\footnote{A constructional analysis reaches the same double relation by another route. \textcite[376]{kim-2017-free-relatives} makes the free relative construction a subtype of both the head-filler and the head-modifier constructions, so the relativized phrase is at once head and filler.} So fusion is favoured here, though not forced. Fused relatives are the only construction in which this paper keeps it (Figure~\ref{fig:fusedrelthis}).
+
+\begin{figure}[H]
+\centering
+\begin{forest} nominal tree
+[NP
+ [{\synnode{Head}{Nom}}, head edge, calign=first, l sep=9mm
+  [{\synnode{Head--Prenucleus}{NP\textsubscript{i}}}, head edge, tier=nucleus,
+   tikz={\draw[-] (crelC.south) -- (.north);}
+   [{\synnode{Head}{Nom}}, head edge
+    [{\synnode{Head}{DP}}, head edge
+     [{\synnode{Head}{D}}, head edge [\mention{whichever}]]]]]
+  [{\synnode{Mod}{Clause\textsubscript{REL}}}, name=crelC, l sep=9mm
+   [{\synnode{Nucleus}{Clause}}, head edge, tier=nucleus
+    [{\synnode{Subj}{NP}} [\mention{he}]]
+    [{\synnode{Predicate}{VP}}, head edge
+     [{\synnode{Head}{V}}, head edge [\mention{gave}]]
+     [{\synnode{Obj\textsubscript{ind}}{NP}} [\mention{me}]]
+     [{\synnode{Obj\textsubscript{dir}}{GAP\textsubscript{i}}} [--]]]]]]]
+\end{forest}
+\caption{\mention{Whichever he gave me} as this paper analyses it. Inside its NP, \mention{whichever} is an ordinary head, where \textit{CGEL} has a second fusion (p.~398). The NP is still head of the nominal and prenucleus of the relative clause at once, as in Figure~\ref{fig:fusedrel}a.}\label{fig:fusedrelthis}
+\end{figure}

@@ -12,6 +12,10 @@
 \AtBeginBibliography{\emergencystretch=1em}
 \setcounter{biburlnumpenalty}{100}
 \newcommand{\synnode}[2]{\shortstack{\footnotesize #1\\#2}}
+% Upright brackets and parentheses inside mentions: brackets mark the relevant part
+% of an example, and brackets are never slanted unless part of the mentioned original
+\newcommand{\bk}[1]{\textup{[}#1\textup{]}}
+\newcommand{\pn}[1]{\textup{(}#1\textup{)}}
 \forestset{head edge/.style={edge={line width=1pt}}, nominal tree/.style={for tree={align=center, parent anchor=south, child anchor=north, l sep=5mm, s sep=4mm, inner sep=1.5pt}}}
 
 % Update PDF metadata
@@ -141,7 +145,7 @@ For the objection to apply, the word has to function as Head alone as well, so t
 
 \textit{CGEL} also asks for generality. Against traditional grammar, it argues that nothing justifies analysing \mention{several} in \mention{several look quite promising} differently from \mention{the larger} in \mention{Kim, as always, chose the larger}, since \enquote{a unitary treatment is to be preferred on grounds of simplicity and generality} (p.~419). Ordinary Head does separate them, but the two words differ in the phrase they head. A determinative's phrase is an NP whether it functions as Det, Mod, or argument (Figure~\ref{fig:some}; §\ref{sec:attachment}), so under ordinary Head only its function changes, as in the third approach. An adjective heads an AdjP in \mention{the larger piece}, but as Head alone in \mention{the larger} it'd head a nominal. The determiner range in the fourth point divides them the same way.
 
-Nor does the objection hold for \mention{nylon}. Unlike \textit{CGEL}'s objections to the pronoun and ellipsis analyses (pp.~419--421), it cites no difference of form, only of interpretation.\footnote{Elsewhere \textit{CGEL} keeps the two apart. In \mention{She considered Ed quite competent}, \mention{quite competent} is \enquote{semantically predicated of Ed, but Ed is not syntactically the subject} \citep[217]{huddleston2002}. Interpretation can explain where a construction occurs and how often, as with \mention{the some} (§\ref{sec:modification}) and \mention{a few} (§\ref{sec:complex}), but a syntactic function needs a formal correlate.} \textit{CGEL} also restricts fused modifier-heads to listed types: \mention{nylon} qualifies as a modifier of composition (p.~417), while the noun \mention{sociology} and others \enquote{require a following head}, as in \ungram{\mention{Bill likes the linguistics lecturer, but I prefer the sociology}} (p.~415). \mention{Dog}, \mention{bathroom}, and \mention{felony} in (\ref{ex:dog}) are of no listed type, and they work.
+Nor does the objection hold for \mention{nylon}. Unlike \textit{CGEL}'s objections to the pronoun and ellipsis analyses (pp.~419--421), it cites no difference of form, only of interpretation.\footnote{Elsewhere \textit{CGEL} keeps the two apart. In \mention{She considered Ed quite competent}, \mention{quite competent} is predicated of \mention{Ed}, which is the object of \mention{considered}, and \textit{CGEL} calls \mention{Ed} its \term{predicand}, a semantic relation, not its subject, a syntactic one \citep[217, 252]{huddleston2002}. Interpretation can explain where a construction occurs and how often, as with \mention{the some} (§\ref{sec:modification}) and \mention{a few} (§\ref{sec:complex}), but a syntactic function needs a formal correlate.} \textit{CGEL} also restricts fused modifier-heads to listed types: \mention{nylon} qualifies as a modifier of composition (p.~417), while the noun \mention{sociology} and others \enquote{require a following head}, as in \ungram{\mention{Bill likes the linguistics lecturer, but I prefer the sociology}} (p.~415). \mention{Dog}, \mention{bathroom}, and \mention{felony} in (\ref{ex:dog}) are of no listed type, and they work.
 
 \ea\label{ex:dog}
 \ea \mention{You take the cat shirt and I'll take the dog.}

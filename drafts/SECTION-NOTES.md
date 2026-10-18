@@ -1,0 +1,72 @@
+# Section notes for the rewrite
+<!-- SUMMARY: what each drafted section assumes from sections not yet written; update as sections land · status: §§2–7 drafted (§5 on 18 Oct, muse review pending); §1 with the abstract, and §8 to come · updated: 2026-10-18 -->
+
+Workflow: one section at a time, in the order §3, §4, §2, §6, §5, §1 with the abstract, then §8. Each section ends with a muse review (run in `reviews/muse-sec<N>-<timestamp>/`), Claude's triage, then Brett's read.
+
+## §2 as drafted (17 Oct, `drafts/analyses.tex`)
+
+- **Delivered:** category against function (with *nylon* head/modifier, p. 421); DP as CGEL's determinative phrase (Payne et al. n. 2); Nom defined at Figure 1, with "nominal" in prose and Nom in trees and quotations; peripheral modifier (*even this house*, p. 331); fusion and Payne et al.'s inventory (p. 571); the two departures (pp. 569–570), with two parents in Det–Head and one nominal in Mod–Head; ordinary Head as CGEL's tree minus the dependent function, with *pure head* (p. 410), CGEL's own "change of function without change of category" (p. 421) and permissions; hybrids (pp. 566, 571, 600); the three commitments and the two kinds of silent-noun analysis, with CGEL's grounds in a footnote (pp. 420–421; *many ones of us* introduced); the criterion with p. 217; the *nylon*/*dog* demonstration (pp. 415, 417, 421), *double* in a footnote (pp. 418, 421, 434); case as CGEL's named form (pp. 420, 1073–1074); a note on data.
+- **Dropped (Brett, 17 Oct):** the old draft's version of ordinary Head, in which a determinative builds an NP around itself in every function, so that *some* in *some apples* is an NP functioning as determiner, like *Kim's*. That is the taxonomic paper's structure, and it stays there. This paper uses version A throughout: CGEL's DP, unchanged, functions as head of the nominal and nothing else.
+
+## §2 passes to §6 and §8 (added 17 Oct, after the decision above)
+
+- **§6 needs a new condition under which ordinary Head would be wrong.** The structure plan's condition was about determinative and genitive determiners sharing a category, which they don't under version A. The replacement is the paper's criterion run in reverse: ordinary Head is wrong for a word if, standing alone, the word shows some property of form that varies with the determiner function and not with the word itself. §3 looked for such a property in the genitive and didn't find one. The closest candidate is §4's condition on adjectives before the head (*the lucky few*, but not *lucky few* on its own), which both analyses have to state. §6 should say so.
+- **§8 gets the old section "If determinatives are nouns" as a short pointer** to the taxonomic paper, in the weaker form version A allows. The taxonomic paper's outline cites that section "as a payoff", so check that citation once §8 is written.
+- **A point for §6 or §7, if wanted.** English fused relatives never change category at the fused node: Payne et al.'s matching requirement (p. 574, property iv) makes the fused phrase and its parent projections of the same word class, as with NP in a nominal, or PP in PP for *wherever you go* (p. 575 and n. 10). The change of category occurs only in Det–Head and Mod–Head. So under version A, each of fusion's two departures turns up in its own construction and never both together: two functions only in fused relatives, and a change of category only where a determinative or adjective phrase heads a nominal. Brett also confirmed two PP fused relatives functioning as subject, *Whenever suits you is fine* and *Wherever you want to eat is fine with me*, which could go in §7's paragraph on PP fused relatives.
+
+## §2 owes §3 and §7
+
+- **Terms:** Nom, defined at the first tree, with a single convention for "Nom" against "nominal" (§3 says "nominal" in prose, §7 quotes "Nom"); ordinary Head; fusion's two departures (Payne et al. pp. 570–571), with the change of category on the head path that hybrid constructions need anyway (p. 571); "permission" as the form ordinary Head's lexical statements take.
+- **The criterion** with its two demonstrations: *nylon*/*dog* against CGEL p. 421 (interpretation against form, with p. 217), and case as the form CGEL itself names (p. 420, pointing to fused relatives).
+- **The answer to CGEL's p. 421 objection** to "change of function without change of category". §3 says only that for determinatives the objection has nothing to work on; §2 owns the general answer.
+- **The rivals' premises** (DP, silent nouns) and the conditional framing; §3 cites *many ones of us* (pp. 420–421) without introducing it.
+- **Hybrids:** Payne et al. call hybrids "found only marginally in English" (p. 566). Answer in §2: fusion has the same change of category at the fused node (p. 569), in every fused use, so it's no less productive under fusion. §3's cost paragraph assumes this.
+- **Glosses §3 gives in passing,** which §2 should fix or define first: "pure head" and "peripheral" (modifier of the whole NP).
+- **Labels §3 and §7 use:** sec:analyses (§2), sec:mod-head (§4), sec:once (§5).
+
+## §2 owes §4 (added when §4 was drafted, 17 Oct)
+
+- **Nominal and its head:** §4 says an AdjP or determinative heads "the nominal" and that the NP's determiner is separate. §2's first tree should make "head of the nominal" and "the NP's determiner" visibly different positions.
+- **Silent nouns:** §4's *the some who* paragraph points to §2 for the silent-noun rivals and only adds its own point (a silent noun licenses silently what's excluded overtly).
+- **Nouns:** §4 says *nylon*, which CGEL counts as Mod–Head (p. 417, composition type), "was taken up in Section 2". §2 has to say that *nylon* is CGEL's Mod–Head case, not only its p. 421 objection.
+- **Peripheral modifier:** §4 reuses §3's gloss ("a modifier of the whole NP") for *a* in *a few*.
+
+## §6 as drafted (17 Oct, `drafts/costs.tex`)
+
+- **What it does.** One table of what each analysis has to state for determinatives standing alone and adjectives heading a nominal. Above the line are the things both analyses state in the same form, or as lists of the same kind. Below it are the two differences (after the muse review merged a third into them): a second function for the head of the nominal, which fusion has and ordinary Head doesn't, so that under ordinary Head *few* has one structure in all four of its uses; and the adjective before a bare determinative, which fusion derives from adjacency and ordinary Head states as a condition, with *a lucky few* costing each a statement. Short paragraphs follow on the trade, on how Payne et al.'s two departures fall under each analysis (using their matching requirement for English fused relatives, p. 574, and acknowledging bare *whichever he gave me*), and on the test that would turn the comparison against ordinary Head. The adjective comes nearest to passing that test and fails it only because of *a lucky few*, which matches §3's "nearest thing to a trace" and §4's closing sentence.
+- **What it still owes.** A row for *once*, *twice* and *thrice*, once §5 is drafted (§5 owes §6 that row). The pointer to the online supplement isn't true yet: the supplement has to be rebuilt on version A, with the permissions and Head relations of both analyses. The old draft's supplement material was written on version B.
+- **Dropped from the old §9** because it was written on version B: the rows on phrase category and modifier domains, the statement Det:{NP,PP}, the subsection on degree modifiers (*good enough*), the paragraph on Hudson's determiners, and the condition of failure about determinative and genitive determiners sharing a category.
+
+## §4 revised 18 Oct: pronouns and proper names
+
+- **What was added.** Brett asked for the old draft's pronoun-and-name argument to be accounted for properly, whichever way it falls. Eight paragraphs now follow the *a lucky few* paragraphs (as revised after the muse review on 18 Oct). They separate three questions, following CGEL. (1) Does a determinerless head take a pre-head dependent at all? CGEL states that pronouns don't (p. 430) and derives the gap from fusion only for the compounds (p. 423). So the grammar already makes a statement of this kind. Ordinary Head's condition is a further one, since it has to mention a determiner and *a*. (2) Does it take a non-restrictive adjective with no determiner? Names and core personal pronouns do (*poor Henry*, *Lucky you!*), and simple determinatives don't (\**Lucky few!*). But two *every*-compounds are attested (*Poor everybody.*, *Lucky everyone.*), against CGEL's "not possible". Both analyses then need a listed exception, and only fusion's goes against a principle. (3) Does a restrictive adjective need a determiner? With pronouns and names it does, but that comes from the singular count use (*the real you is*), and it doesn't extend to plural *few*. Whether *me* in *the real me* is a common noun (CGEL p. 429 n. 46) or a pronoun in a secondary use (the taxonomic paper, on Halm's reflexive data) is left open, and the point doesn't depend on it. The verdict: questions 1 and 2 favour ordinary Head modestly, question 3 favours fusion, and the pre-head adjective remains the nearest trace of the determiner function. A footnote deals with *precious few* (Matthews p. 102).
+- **Done.** Brett's judgments (M2) and COCA search (M3) are in, and the muse review is triaged (`reviews/muse-sec4-6-20261018-065227/TRIAGE.md`). Brett reads next.
+- **Length.** About 1,000 words with footnotes. §4 was already over budget, and trimming is left to the full read.
+
+## §4 passes to §6
+
+- One structure for *few* across *few would dare*, *few of them*, *the few*, *the lucky few* (ordinary Head) against Det–Head and Mod–Head (fusion). §4 states it as shared structure and leaves the counting to §6.
+- Lists both analyses need: determinatives taking an external determiner (with the modifier use as a default, exceptions *some*, *both*, *every*, *various*); CGEL's following-modifier condition (p. 416); adjectives that head a nominal (CGEL's types; \**the main*); the article-only *rich* type.
+- *A lucky few*: a statement in each (a longer list inside the complex determinative, or *a* as determiner of plural *few*, against peripheral *a* counted by the pre-head adjective condition).
+
+## §4 owes §3 and §7 (drafted 17 Oct in `drafts/mod-head.tex`; all items below are in the draft)
+
+- The one-Head-chain argument for *few* (*few*, *the few*, *few of them*).
+- The pre-head adjective concession, weighed with *the lucky few* and *a lucky few*. §3 calls it the nearest trace of the determiner function in their distribution.
+- The Mod–Head genitive extension (*the latter's*, *the poor's*), feeding §7's paragraph on the spine of case. §3 now frames case as a division among words, not a condition on functions: in §7 the word stays the same and the form follows the function. §4 should use the same standard. If some fused modifier-heads lack the genitive, say what the division follows, and don't count a gap as a failure of the case requirement or an attestation as support for it without that comparison. Data from the 17 Oct COCA count: one genitive on *few* with a determiner, *the first few's salty freshness* (Ploughshares 1996), against none on bare *few* in 22 lines and none on *the few* on 16 Oct (evidence repo `corpus/exclusion_tests/2026-10-17-brett-supplied-determinative-genitives.md` and `corpus/genitive/`).
+- *The some who*, and the silent-noun point it carries.
+- **The analysis of *a few*,** moved from §3 after the muse review: peripheral *a*, *quite a few* against *a very few* (CGEL p. 392), the expansions (*a good few*, *a fair few*, *a select few*), and *many a* in a footnote.
+- **The cost of *a lucky few* to fusion.** §3's closing paragraph promises that §4 shows the pre-head adjective condition costs fusion a statement too.
+
+## Evidence links (18 Oct)
+
+- The paper links to the corpus evidence once, from §2's note on data, to `EVIDENCE.md` in this repository. That index gives the record behind each corpus claim, with a link into the evidence repository. Footnotes no longer point to repository folders. When a section adds or changes a corpus claim, add or change its row in `EVIDENCE.md`.
+- **At submission:** the links name the author, so the *JL* review copy needs an anonymized view of both repositories. The published version should cite an archived release of the evidence repository with a DOI.
+
+## §5 as drafted (18 Oct, `drafts/once.tex`; revised after the muse review the same day)
+
+- **What it does.** Gives Payne et al.'s own case a fair hearing and finds it neutral on §2's criterion. It sets out their five uses (sequential *once* is a preposition for them, with no fusion), accepts their category argument, and answers each claimed gain from §§3–4: morphology (the bases mirror the meaning), with and without a determiner (the §4 default), the adjective (\*last once against *this last once*, the trade already counted for *few*), larger phrases (a PP heading a nominal is common to both, per their n. 31), singulative and past uses, and term of office. It then covers the rest of their case: multiplier *twice*, n. 40, and the non-standard uses of their §4. In the term-of-office use, ordinary Head has one function and one nominal fewer: the determinative *once* as modifier, against Payne et al.'s nominal with a fused modifier-head as attribute. Both need the restriction to names of offices.
+- **What it pays.** §6's row for *once*, *twice*, and *thrice* (above the line), a term-of-office clause in the "second function" row (below it), and the PP case in the change-of-category row. It also discharges the footnote in §3 that points here (n. 30, the genitive ending) and §4's pointer to *this once*.
+- **Length.** About 1,030 words by a crude count, against 800. Left to the full read and trim.
+- **Review.** `reviews/muse-sec5-20261018-101536/` (MUSE.md, TRIAGE.md, manifest.yaml).
+- **For §1 and the abstract.** On ordinary Head, term-of-office *once* is no head at all: the determinative functions as modifier in *once mayor*, with no nominal of its own. So "elsewhere the fused phrase is an ordinary head" needs a clause for this case (Payne et al.'s fusion, not *CGEL*'s), or §5 needs to say it's the one place where the phrase fusion makes a head is a dependent only. §2's statement ("Whatever phrase *CGEL* fuses functions as head of the nominal and nothing else") is about *CGEL*'s fusions and still holds.

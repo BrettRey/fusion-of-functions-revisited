@@ -1,0 +1,170 @@
+% Draft: §4, Mod--Head, for the restructured paper (rewrite method agreed
+% 17 Oct 2026; see the evidence repo's DECISIONS.md). Drafted from the old
+% draft's §§3.1, 3.4, 4, 6.1, 7, 8.1 and 10, CGEL ch. 5 §§7.10, 9.3--9.5,
+% Payne et al. (2007), and the evidence repo's corpus records
+% (corpus/premodification/, corpus/genitive/, corpus/exclusion_tests/).
+% Revised after the muse review (reviews/muse-sec4-20261017-180414/TRIAGE.md).
+% CGEL pages checked against the PDF on 17 Oct: 377, 392, 410, 415--419,
+% 558; Payne et al. 569, 576, 579--581, 588. Old-draft pages not rechecked:
+% 393--394, 549--550 (footnote), for the verified-detail pass.
+% Constructed examples, judgments confirmed by Brett on 17 Oct: her every
+% move and the various options good, *the in the room people bad.
+% Added 18 Oct (the accounting of pronouns and names, Brett: "show the cards
+% whichever way they lie"): CGEL pp. 327, 423, 429 (with n. 46), 430,
+% 520--521 and Payne et al. p. 584 checked against the PDFs; Matthews (2014)
+% p. 102 checked against the text conversion (p. 10 cut after the muse
+% review, reviews/muse-sec4-6-20261018-065227/TRIAGE.md).
+% 18 Oct (Brett: "would a tree help"): Figure fig:modhead added after the
+% paragraph on Payne et al.'s tree; (b) follows their drawing of Head-Mod in
+% (12b), p. 580, with a line from the nominal for each function. Halm (2021) pp. 19,
+% 29--30 taken from the taxonomic paper's citation (determinatives-as-nouns.tex
+% l. 838), which argues for a secondary use over conversion; not rechecked.
+% Constructed examples, judgments confirmed by Brett on 18 Oct (M2): *Lucky
+% few! bad, Lucky survivors were airlifted out good, Young Kennedys still go
+% into politics good, *Remaining few were the hangers-on bad, Volunteers were
+% precious few good. Poor everybody / Lucky everyone: Brett's COCA search,
+% 18 Oct (M3), record corpus/exclusion_tests/2026-10-18-*.md in the evidence repo.
+%
+% Labels it relies on: sec:analyses (§2), sec:det-head (§3), sec:once (§5),
+% sec:fused-relatives (§7). Not yet \input into the main file.
+
+\section{Modifiers as heads: Mod--Head}\label{sec:mod-head}
+
+In Mod--Head fusion the head of a nominal is also its modifier. \textit{CGEL} uses it for words that function elsewhere as modifiers in a nominal: determinatives and adjectives, and also nouns such as \mention{nylon} (p.~417), taken up in Section~\ref{sec:analyses}:\footnote{Examples (\ref{ex:mh}a, b, d--f) are \textit{CGEL}'s \citep[416--419]{huddleston2002}; (\ref{ex:mh}c) is from NOW (\textit{National Observer}, 3 October 2022).}
+
+\ea\label{ex:mh}
+\ea \mention{This copy is defective but \bk{the other two} are fine.}
+\ex \mention{I didn't like it myself, but I respect the views of \bk{the many who did}.}
+\ex \mention{Are you one of \bk{the lucky few who found powdered infant formula}?}
+\ex \mention{\bk{The rich} cannot enter the kingdom of Heaven.}
+\ex \mention{How will the new system affect \bk{the very poor}?}
+\ex \mention{There were two pieces left and Kim, as always, chose \bk{the larger}.}
+\z\z
+
+For \textit{CGEL}, \mention{two}, \mention{many}, \mention{few}, \mention{rich}, \mention{poor}, and \mention{larger} each modify the nominal and head it at once \citep[415--419]{huddleston2002}. \textcite[579--580]{Payne2007} draw the adjectival case for \mention{the very hard of hearing}: the AdjP is \enquote{head of Nom} and \enquote{modifier of that head}, and \mention{the} is the NP's determiner as usual.\footnote{Payne et al.'s tree labels the fused function Head-Mod, since the counterpart modifier follows the head (\mention{people very hard of hearing}); their tree for \mention{this once} has Mod-Head (p.~588). \textit{CGEL} allows fusion with a post-head modifier as well (p.~418). I write Mod--Head for both.} Unlike Det--Head, both functions belong to the same nominal (p.~588; Figure~\ref{fig:modhead}). Their main Mod--Head case, \mention{this once}, is taken up in Section~\ref{sec:once}. On ordinary Head the phrase is the head of the nominal and nothing more.
+
+\begin{figure}[H]
+\centering
+\begin{minipage}[t]{.36\linewidth}\centering
+(a) \mention{the rich people}\par\smallskip
+\begin{forest} nominal tree
+[NP
+ [{\synnode{Det}{DP}}
+  [{\synnode{Head}{D}}, head edge [\mention{the}]]]
+ [{\synnode{Head}{Nom}}, head edge
+  [{\synnode{Mod}{AdjP}}
+   [{\synnode{Head}{Adj}}, head edge [\mention{rich}]]]
+  [{\synnode{Head}{N}}, head edge [\mention{people}]]]]
+\end{forest}
+\end{minipage}\hfill
+\begin{minipage}[t]{.3\linewidth}\centering
+(b) \mention{the rich}, fusion\par\smallskip
+\begin{forest} nominal tree
+[NP
+ [{\synnode{Det}{DP}}
+  [{\synnode{Head}{D}}, head edge [\mention{the}]]]
+ [{\synnode{Head}{Nom}}, head edge
+  [{\synnode{Mod--Head}{AdjP}}, no edge,
+   tikz={\draw[-] (!u.south) -- ([xshift=-7pt].north); \draw[-,line width=1pt] (!u.south) -- ([xshift=7pt].north);}
+   [{\synnode{Head}{Adj}}, head edge [\mention{rich}]]]]]
+\end{forest}
+\end{minipage}\hfill
+\begin{minipage}[t]{.3\linewidth}\centering
+(c) \mention{the rich}, ordinary Head\par\smallskip
+\begin{forest} nominal tree
+[NP
+ [{\synnode{Det}{DP}}
+  [{\synnode{Head}{D}}, head edge [\mention{the}]]]
+ [{\synnode{Head}{Nom}}, head edge
+  [{\synnode{Head}{AdjP}}, head edge
+   [{\synnode{Head}{Adj}}, head edge [\mention{rich}]]]]]
+\end{forest}
+\end{minipage}
+\caption{\mention{The rich people} (a), and \mention{the rich} under fusion (b) and ordinary Head (c). In (b) the AdjP has one parent, the nominal, with a line from it for each of its two functions; in Figure~\ref{fig:analyses}b the fused DP has two parents. In (c) the AdjP is the head of the nominal and nothing else.}\label{fig:modhead}
+\end{figure}
+
+So the two analyses agree that the adjective or determinative heads the nominal. Neither has a noun as the NP's ultimate head, the change of category Payne et al.\ accept at the fused node (p.~569). Both keep the word's category. \mention{Rich} and \mention{poor} take adverbs (\mention{the extremely rich}, \mention{the very poor}), which \textit{CGEL} calls \enquote{clear evidence that they retain their category status as adjectives}, and \mention{the rich} is plural with no plural ending (p.~418). Both give the head the dependents it takes elsewhere: a partitive in \mention{the biggest of them} (p.~416), a post-head phrase in \mention{the pure in heart} (p.~418). And neither restores a noun: \mention{the people very hard of hearing} can't be read generically, as \mention{the very hard of hearing} is \citep[580]{Payne2007}.
+
+What's at issue is only the second function, the modifier. Form could show it in two ways: a form restricted to the fused function, as \mention{none} is for Det--Head, or a fact of order that only a modifier relation predicts. The formal differences Payne et al.\ cite are in Det--Head and in fused relatives (\mention{none}, p.~581; the \mention{-ever} forms, p.~576), and they cite none for Mod--Head. Their fact of order is adjacency: nothing comes between the fused functions, so \ungram{\mention{the in the room very hard of hearing}} is out (p.~580 n.~17). That argument is aimed at a silent head. With the AdjP as head, the PP would precede the head of a nominal, which PPs don't do before a noun either (\ungram{\mention{the in the room people}}).
+
+For determinatives, \textit{CGEL} links the fused use to the dependent one. Determinatives \enquote{which can function as internal modifier as well as determiner can in general occur as fused modifier-head as well as determiner-head} \citep[415]{huddleston2002}: \mention{the few} beside \mention{the few mistakes}, where \mention{few} is modifier (p.~392). \textcite[588]{Payne2007} state the link without the hedge: \mention{some}, \mention{every}, \mention{any}, and \mention{no} \enquote{can function solely as determiners and therefore never permit a preceding determiner}.
+
+Yet \mention{some} is attested after \mention{the}: \mention{when times are bad, \bk{the some} will become the many}; \mention{one of \bk{the some who hope for a return to the good old days}}.\footnote{COCA: \textit{Foreign Affairs}, 1999; iWeb: sspnet.org. COCA has five clear lines across searches for \texttt{the some}, \texttt{the some who}, and \texttt{the some of us who}; the other hits on the first display page of \texttt{the some} are typos for \mention{same}, the adverb \mention{some} \enquote*{approximately}, titles, and garbled text. iWeb has 10 hits for \texttt{the some who}, most with no earlier \mention{some} in view, so they aren't quotations of the word.} With \mention{the} as determiner, a fused \mention{some} can only be a modifier-head, and that's the Mod--Head Payne et al.'s \enquote{never} excludes. \textit{CGEL}'s licence is hedged, and it records exceptions of both kinds itself. \mention{Both}, which \enquote{cannot occur in internal modifier function}, heads a nominal after \mention{the} in \mention{the both of us} (p.~377). \mention{Every} and \mention{various} function as modifiers after a determiner (\mention{her every move}, \mention{the various options}) but don't head a nominal there: \enquote{\mention{Every} is again excluded, and so too this time is \mention{various}} (p.~416).
+
+So the link between the two uses is a default, not a condition. A determinative that functions as modifier after a determiner can usually head a nominal after one too, but the exceptions run both ways, and both analyses list the determinatives that can. Ordinary Head states the list as a permission, as it states the list of determinatives that stand alone (Section~\ref{sec:det-head}). Both also need \textit{CGEL}'s observation that, cardinals apart, these determinatives are \enquote{hardly admissible} after a determiner unless the NP has a post-head modifier, as in \mention{these few here} and \mention{the many who did} (p.~416).
+
+\mention{The some who} also tells against a silent noun (Section~\ref{sec:analyses}). In \mention{the some \textup{[N]} who say it}, a silent noun would make \mention{some} a modifier after \mention{the}, which Payne et al.\ exclude (p.~588), and the overt sequence doesn't turn up: of 53 iWeb hits for \mention{the some people}, none of the 50 displayed has that reading. The silent noun would license silently what's excluded overtly.
+
+The determiners these heads take follow the word too. With an adjective before independent \mention{few}, the determiner is \mention{the} in 192 of 321 COCA lines, and a demonstrative (\mention{those chosen few}), a genitive (\mention{Hollywood's chosen few}), \mention{some}, \mention{we}, or \mention{us} in 35; nearly all the rest have \mention{a}, taken up below.\footnote{COCA, searched by hand for \mention{lucky}, \mention{chosen}, \mention{fortunate}, \mention{remaining}, and \mention{priveledged} (sic) before \mention{few}: 607 tokens, 368 lines inspected, 321 with no following noun. Of the 321, 192 have \mention{the}, 90 \mention{a} alone, 25 a demonstrative, 6 a genitive, 2 \mention{some}, and 2 \mention{we} or \mention{us}; one is a name, and three have nothing before the adjective (a headline, a fragment, and a web post).} That's the range of determinatives a plural noun takes. The adjectives of the \mention{rich} type take \mention{the} or a genitive (\mention{the world's poor}, \mention{our elderly}), though \textit{CGEL} says they're \enquote{determined by the definite article} and adds that \enquote{we couldn't even substitute a demonstrative: \ungram{\mention{these very poor}}} \citep[417]{huddleston2002}.\footnote{COCA, 18 October 2026, searched by hand for \texttt{[apps*] poor|rich|elderly}: of the 500 lines displayed, 19 have the adjective heading the NP after a genitive pronoun (\mention{care for \bk{their elderly}}, \textit{New York Times}, 1992), and 9 more quote \enquote{your tired, your poor}. Of 57 lines with a full stop after the adjective, 41 are the construction (\mention{employment for \bk{their poor}}, \textit{New York Times}, 1996), two of them with \mention{rich} (\mention{he doesn't mean \bk{our rich}}, reason.com, 2012). Demonstratives weren't searched.} Nor does the category fix the range. Among adjectives, \mention{blue} heads a nominal with no determiner (\mention{I like \bk{blue}}), \mention{second} heads one after \mention{a} (\mention{I didn't want \bk{a second}}), and \mention{bigger} can't (\ungram{\mention{a bigger}}) (pp.~416--417). Both analyses state the range word by word, or type by type.
+
+What ordinary Head adds is one structure for every use of \mention{few}: \mention{few would dare}, \mention{few of them}, \mention{the few}, and \mention{the lucky few}. In each, \mention{few} heads the nominal, and a determiner, when there's one, is the NP's own. Fusion gives the first two Det--Head and the last two Mod--Head, so the same word heading the same kind of NP gets a different pair of functions depending on whether a determiner precedes it.
+
+Which adjectives can head a nominal is a list on both analyses. \textit{CGEL} gives types: superlatives and definite comparatives (\mention{the tallest}, \mention{the elder}); ordinals (\mention{the second}); colour, provenance, and composition (\mention{I like \bk{blue}}); age and size (\mention{I prefer \bk{old}}); and the special interpretations of \mention{the rich} and \mention{the immoral} (pp.~416--417).\footnote{\textit{CGEL} treats one more case elsewhere. \mention{Above} is \enquote{primarily a preposition}, but belongs by conversion to the adjective category in the sense of location in the discourse, and the adjective is a fused modifier-head in \mention{Her conclusion is the same as \bk{the above}} (p.~1555). \textit{CGEL}'s own prose uses it freely (\mention{All the above have transitive uses}, \mention{Some of the above are verbs as well as nouns}, p.~1690). Like the types listed, it heads the nominal on both analyses. \textit{CGEL} adds that \mention{below} has no such use and \enquote{belongs only to the preposition category} (pp.~1555--1556), but COCA has both uses: before a noun in 185 of 197 lines of \mention{the below} with a following noun (\mention{are given in \bk{the below table}}, \textit{Education}, 2011), and heading a nominal in 18 of 55 lines of \mention{the below} before a full stop or after \mention{of} (\mention{is not either of \bk{the below}}, \textit{Popular Mechanics}, 2014).} It excludes \ungram{\mention{the advancing}} (p.~415), \ungram{\mention{a bigger}}, and \ungram{\mention{the main}} (p.~416). \mention{Main} is attributive-only (p.~558), so modifier is its only function, and its exclusion is \textit{CGEL}'s evidence that \enquote{the possibility of fusion with the head must in the last resort be stated in syntactic terms} (p.~416). Ordinary Head states the same list, as permissions to head a nominal.
+Generality is also \textit{CGEL}'s argument against traditional grammar, which calls \mention{several} a pronoun in \mention{\bk{several} look quite promising} and treats \mention{the larger} as elliptical. Against that split, \textit{CGEL} holds that \enquote{a unitary treatment is to be preferred on grounds of simplicity and generality} \citep[419]{huddleston2002}, and fusion provides one. Ordinary Head keeps the gain with a single function: each word heads its nominal. Fusion gives the two words different pairs, Det--Head and Mod--Head.
+
+Case shows no modifier function either. \textit{CGEL}'s argument from the genitive concerns the determiner function (p.~420), and it states no case requirement for modifiers, so the check here is this paper's own: whether the genitive divides the fused modifier-heads as it divides the determiner-heads (Section~\ref{sec:det-head}). It does. \mention{The latter's} and \mention{the former's} are frequent, \mention{the poor's} occurs in edited prose (\mention{\bk{the poor's} material well-being has improved}, \textit{Newsweek}, 2010), \mention{the rich's} only on the web, and \mention{few} after a determiner almost never.\footnote{One COCA search for \mention{the latter}, \mention{the former}, \mention{the other}, \mention{the poor}, and \mention{the rich} followed by \mention{'s} displayed 500 lines, probably a cap (498 pasted). In those lines the genitives number 149 for \mention{the latter}, 31 for \mention{the former}, 8 for \mention{the poor} (five in magazines and academic writing), and 3 for \mention{the rich} (all web or blog). \textit{CGEL} has one in its own prose: in its account of the traditional definition, a preposition \enquote{expresses the latter's relation to another word} (p.~598). \mention{The other} has 253, set aside because its plural \mention{others} leaves a noun analysis open. \texttt{the few/many 's} gave no genitive, and \texttt{few 's} one after a determiner, \mention{\bk{the first few's} salty freshness} (\textit{Ploughshares}, 1996, fiction).} In these lines too, the division follows the word.
+
+Mod--Head is also where the advantage Section~\ref{sec:det-head} conceded to fusion has to be weighed. A bare determinative takes no pre-head adjective outside a few exclamations, taken up below (\ungram{\mention{Lucky few escaped}}),\footnote{\mention{Precious few would dare} isn't an exception. For \mention{precious} in \mention{They had precious little money}, \textcite[102]{matthews2014} offers the predicative use as the crucial evidence that it's an adverb (\mention{The money they had left was precious little}), and the same test works for \mention{few} (\mention{Volunteers were precious few}). So \mention{precious} is a modifier in the DP, as \mention{very} is in \mention{very few}, not in the nominal.} and fusion derives the gap from adjacency: with \mention{few} as Det--Head, \mention{lucky} would have to precede the determiner. After \mention{the}, \mention{few} is Mod--Head and \mention{lucky} modifies the nominal it heads. Ordinary Head states a condition: a determinative heading a nominal takes a pre-head adjective only when the NP has a determiner, or \mention{a} (taken up next).
+
+\mention{A lucky few} is the hard case for both. Of the 321 COCA lines with an adjective before independent \mention{few}, 90 have \mention{a} as the only word before the adjective, and where a verb agrees with the phrase, it's plural: \mention{\bk{a lucky few} were sent far and wide to schools in other counties and states} (\textit{Washington Post}, 2015). The adjective can be a phrase (\mention{A very lucky few}, CNN, 2005). For fusion, \mention{a few} is \textit{CGEL}'s complex determinative, whose internal expansions are \mention{very}, \mention{good}, and \mention{fair} (p.~392). Fusion can open a slot for an AdjP inside that determinative, a phrase inside a word. It can make \mention{a} the NP's determiner, against \mention{a}'s requirement of a singular count head, since \mention{few} is plural. Or it can make \mention{few} a Mod--Head with no determiner, like \mention{blue} in \mention{I like \bk{blue}}, but in \textit{CGEL}'s analysis \mention{few} functions as modifier only after a determiner, and excluding \ungram{\mention{Lucky few escaped}} would then take the condition ordinary Head states, not adjacency.
+
+On ordinary Head, \mention{a} in \mention{a few} isn't the determiner \mention{a}, which needs a singular count head. It's a modifier of the whole NP, the kind called peripheral in Section~\ref{sec:det-head}, though \textit{CGEL}'s peripheral modifiers are adverbs, PPs, and reflexive pronouns (p.~331): it comes after \mention{quite} (\mention{quite a few mistakes}) and before \mention{very} (\mention{a very few mistakes}; p.~392).\footnote{The expansions fit a phrase too: \textit{CGEL}'s \mention{a good few} and \mention{a fair few} (p.~392), and \mention{a select few}, with 21,137 tokens in NOW. For \mention{a great many}, \textit{CGEL} allows \mention{great} or \mention{good} and says that \enquote{one or other of these adjectives is required} (p.~394), but COCA has ten others in that slot, one token each, as in \mention{when a shrinking few do very well and \bk{a growing many} barely make it} (NPR, 2013). The slot takes an adjective before a noun with \mention{few} too: \mention{it took a few seconds, only a few seconds, \bk{a whole few seconds}, to sink in} (\textit{Jezebel}, 2016). \mention{A few} is positive where \mention{few} is negative (pp.~393--394), which I take to be a convention of the combination, as the minimizer reading of \mention{a bit} is in \mention{They didn't enjoy it \bk{a bit}} (pp.~549--550). \textit{CGEL}'s \mention{many a} (p.~394) comes apart the same way, as \mention{many} in predeterminer function before an NP with \mention{a}, like \mention{such} in \mention{such a mess}.} The condition on pre-head adjectives then has to count it (Figure~\ref{fig:afew}). So \mention{a lucky few} costs each analysis a statement: an AdjP slot inside a determinative, or an \mention{a} that admits the adjective.
+
+\begin{figure}[H]
+\centering
+\begin{minipage}[t]{.24\linewidth}\centering
+(a) \mention{a few}, fusion\par\smallskip
+\begin{forest} nominal tree
+[NP
+ [{\synnode{Head}{Nom}}, head edge, before drawing tree={x+=1.5em}
+  [{\synnode{Det--Head}{DP}}, no edge
+   [{\synnode{Head}{D}}, head edge [\mention{a few}]]]
+  {\draw[-] (!uu.south) -- (); \draw[-,line width=1pt] (!u.south) -- (); }]]
+\end{forest}
+\end{minipage}\hfill
+\begin{minipage}[t]{.32\linewidth}\centering
+(b) \mention{a few}, ordinary Head\par\smallskip
+\begin{forest} nominal tree
+[NP
+ [{\synnode{Periph.\ Mod}{DP}}
+  [{\synnode{Head}{D}}, head edge [\mention{a}]]]
+ [{\synnode{Head}{NP}}, head edge
+  [{\synnode{Head}{Nom}}, head edge
+   [{\synnode{Head}{DP}}, head edge
+    [{\synnode{Head}{D}}, head edge [\mention{few}]]]]]]
+\end{forest}
+\end{minipage}\hfill
+\begin{minipage}[t]{.4\linewidth}\centering
+(c) \mention{a lucky few}, ordinary Head\par\smallskip
+\begin{forest} nominal tree
+[NP
+ [{\synnode{Periph.\ Mod}{DP}}
+  [{\synnode{Head}{D}}, head edge [\mention{a}]]]
+ [{\synnode{Head}{NP}}, head edge
+  [{\synnode{Head}{Nom}}, head edge
+   [{\synnode{Mod}{AdjP}}
+    [{\synnode{Head}{Adj}}, head edge [\mention{lucky}]]]
+   [{\synnode{Head}{DP}}, head edge
+    [{\synnode{Head}{D}}, head edge [\mention{few}]]]]]]
+\end{forest}
+\end{minipage}
+\caption{\mention{A few} under fusion (a), as \textit{CGEL}'s complex determinative, and under ordinary Head (b), and \mention{a lucky few} under ordinary Head (c). On ordinary Head \mention{a} is a peripheral modifier of the whole NP, attached as \textit{CGEL} attaches external modifiers (p.~331), and the NP it modifies has no determiner. In (c) the adjective is inside that NP's nominal, which is why ordinary Head's condition on pre-head adjectives has to mention \mention{a}.}\label{fig:afew}
+\end{figure}
+
+For \textcite[584]{Payne2007}, a condition of this kind is \enquote{precisely the kind of stipulation which is not required when the determiner and head functions are fused}. They say it of an analysis of the compounds with a silent head, but it applies to ordinary Head's condition as well. Whether the grammar needs such a statement anyway turns on the other heads that take no determiner in their primary use, pronouns and proper names. \textit{CGEL}'s treatment of them separates three questions: whether such a head takes a pre-head dependent at all, whether it takes a non-restrictive adjective, and whether a restrictive one needs a determiner.
+
+On the first, the grammar already makes a statement of this kind, for pronouns. \textit{CGEL} makes it \enquote{a defining property of pronouns} that \enquote{they do not permit determiners} (p.~429), and they \enquote{do not normally allow internal pre-head dependents} (\ungram{\mention{Extravagant he bought a new car}}, p.~430). They take some dependents after the head, as in \mention{you who worked on both the projects} (p.~429). The compound determinatives split the same way (\mention{nothing sensible}, \mention{everything in the collection}), and for them \textit{CGEL} derives the gap from fusion: \enquote{Because determiner and head are fused it is not possible for these forms to take internal pre-head dependents} (p.~423). A pronoun has no determiner function to derive it from.
+
+So the grammar already states, without deriving it, that one kind of head with no determiner normally takes no pre-head dependent. Ordinary Head's condition isn't that statement, though. Since \textit{CGEL} defines pronouns as taking no determiner, it can state their restriction without mentioning one. Pronouns with a determiner, as in \mention{the real me}, come up below. A determinative takes an adjective after a determiner or after \mention{a}, so ordinary Head's condition has to mention both. Fusion's derivation saves that statement, but not a kind of statement the grammar would otherwise lack.
+
+The second question favours ordinary Head, though not by much. Names take a few non-restrictive adjectives with no determiner (\mention{poor Henry}, \mention{Young Isaac Newton went off to Cambridge}; pp.~520--521), and the core personal pronouns take \mention{lucky}, \mention{poor}, and \mention{silly} (\mention{Lucky you!}, \mention{poor old me}; p.~430). Simple determinatives don't seem to (\ungram{\mention{Lucky few!}}, \ungram{\mention{Poor many!}}). But two compounds are attested in the pronouns' exclamation, each just after the same exclamation with a name or a pronoun: \mention{Poor Val. Poor everybody.} (\textit{New Yorker}, 2005), \mention{Lucky you. Lucky everyone.} (\textit{Everwood}, 2004).\footnote{COCA, 18 October 2026, searched by hand for \texttt{poor|lucky|silly everybody|everyone|somebody|someone}: 28 lines. Of the rest, 19 have \mention{lucky} before a clause (\mention{You're lucky someone called it in}), four are predicative (\mention{How poor everyone had been}), one has a determiner (\mention{I made him the lucky someone}), and two are a list and a depictive. No line has \mention{somebody} or \mention{someone} in the use.}
+
+For \textit{CGEL}, \mention{everybody} and \mention{everyone} are fused determiner-heads, so an internal pre-head dependent is \enquote{not possible} for them (p.~423). Fusion can call them nouns by conversion here, like \mention{a nobody} (p.~423 n.~43), though they keep the compounds' universal meaning and take no determiner. It can list them as an exception, as \textit{CGEL} does for pronouns, or take the adjective as a modifier of the whole NP, though that separates them from \mention{Lucky you!}, which \textit{CGEL} counts among internal pre-head dependents (p.~430). On any of these, adjacency no longer derives the gap for them. Ordinary Head adds them to \textit{CGEL}'s exception, \enquote{a few adjectives such as \mention{lucky}, \mention{poor}, \mention{silly} with the core personal pronouns}. Either way the compounds need a listed exception, and only on fusion does it go against a principle.
+
+The third question is where pronouns and names look most like determinatives, but the likeness comes from countability. A restrictive adjective after a determiner is routine with personal pronouns: COCA has 350 tokens of \mention{the real me}. In this use the pronoun heads a singular NP, which takes a third-person singular verb (\mention{The real you is still alive back on Earth}, \textit{Analog}, 2019).\footnote{COCA, 15 October 2026, searches run by hand. Of the 14 lines for \texttt{the real you [be]}, ten have \mention{the real you} as subject, all with \mention{is} or \mention{'s} and none with \mention{are}. On one display page of \texttt{the real you}, 193 of the 198 lines have the restrictive use.} \textit{CGEL} would presumably call the word a common noun here, as it calls \mention{he} and \mention{she} in \mention{Is it a he or a she?} (p.~429 n.~46), though the reflexive suggests a secondary use of the pronoun.\footnote{The reflexive keeps the pronoun's person (\mention{The 12-year-old me is kicking myself}), as a common noun's doesn't (\ungram{\mention{Daddy is enjoying myself}}), except that a stage of the speaker contrasted with another can take third-person forms \citep[19, 29--30]{halm2021virtual}.} On either view the head is singular and count, and an NP with a singular count head needs a determiner, with or without a modifier.
+
+Names are the same. In \mention{The young Isaac Newton showed no signs of genius}, \mention{young} restricts a secondary use in which the name denotes a set of manifestations, and in such uses \enquote{determiners are thus selected in the ordinary way} (pp.~520--521). A singular name in that use needs a determiner for the reason a singular count noun generally does. A plural head needs none, and takes a restrictive adjective without one, a plural name included (\mention{Lucky survivors were airlifted out}, \mention{Young Kennedys still go into politics}). So nothing that holds for names or for \mention{the real me} predicts \ungram{\mention{Remaining few were the hangers-on}} beside \mention{The remaining few were the hangers-on} (\textit{Christian Century}, 1998). Fusion's adjacency does.
+
+The comparison cuts both ways, then. On the first question, \textit{CGEL} already states that pronouns normally take no pre-head dependent, so ordinary Head's condition is a further statement of a kind the grammar already contains. On the second, two compounds take an adjective in the pronouns' exclamation, which adjacency rules out. On the third, the facts with a determiner follow from number and countability and give ordinary Head nothing. The pre-head adjective remains the nearest thing to a trace of the determiner function (Section~\ref{sec:det-head}), but its derivation saves less than Payne et al.\ suggest.
+
+Nothing in the form of Mod--Head expressions, then, shows the modifier function. Which determinatives take an external determiner, which determiners they take, which adjectives head a nominal, and which heads take the genitive all follow the word, and both analyses list them. Fusion derives the absence of an adjective before a bare determinative; after \mention{a}, and for \mention{Poor everybody}, both analyses need a statement.
