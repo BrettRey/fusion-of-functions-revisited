@@ -1,5 +1,5 @@
 # Section notes for the rewrite
-<!-- SUMMARY: what each drafted section assumes from sections not yet written; update as sections land · status: §§2–7 drafted (§5 on 18 Oct, muse review pending); §1 with the abstract, and §8 to come · updated: 2026-10-18 -->
+<!-- SUMMARY: what each drafted section assumes from sections not yet written; update as sections land · status: all sections and the abstract drafted, reviewed, and read by Brett; assembled in the main file 18 Oct; next: the full read and trim · updated: 2026-10-18 -->
 
 Workflow: one section at a time, in the order §3, §4, §2, §6, §5, §1 with the abstract, then §8. Each section ends with a muse review (run in `reviews/muse-sec<N>-<timestamp>/`), Claude's triage, then Brett's read.
 
@@ -70,3 +70,23 @@ Workflow: one section at a time, in the order §3, §4, §2, §6, §5, §1 with 
 - **Length.** About 1,030 words by a crude count, against 800. Left to the full read and trim.
 - **Review.** `reviews/muse-sec5-20261018-101536/` (MUSE.md, TRIAGE.md, manifest.yaml).
 - **For §1 and the abstract.** On ordinary Head, term-of-office *once* is no head at all: the determinative functions as modifier in *once mayor*, with no nominal of its own. So "elsewhere the fused phrase is an ordinary head" needs a clause for this case (Payne et al.'s fusion, not *CGEL*'s), or §5 needs to say it's the one place where the phrase fusion makes a head is a dependent only. §2's statement ("Whatever phrase *CGEL* fuses functions as head of the nominal and nothing else") is about *CGEL*'s fusions and still holds.
+
+## §1 and the abstract (18 Oct, `drafts/intro.tex`, `drafts/abstract.tex`; revised after the muse review the same day)
+
+- **What §1 does.** Opens with *some apples* against *take some*; defines category against function; introduces fusion (CGEL pp. 410–421; Payne et al.) with its two departures (pp. 570–571); names the DP and silent-noun rivals and points to §2; defines ordinary Head and the nominal; states the criterion in §2's words; gives the results by section, with term-of-office *once* and *twice* as ordinary modifiers; makes the one concession (the pre-head adjective, with *a lucky few*, *Poor everybody!*, and CGEL's pronoun restriction); and gives fused relatives' three properties against the head analysis (Bresnan & Grimshaw 1978), "favoured, though not forced". About 800 words.
+- **What it passes on.** §2's first paragraph now repeats §1's category/function definition; trim it in the full read. The companion paper (determinatives as nouns) is no longer mentioned in §1: §8 must take it up, as the structure plan's coda. Wu (2021) is still to be read and placed, probably in §1's rivals paragraph or §2's footnote.
+- **The abstract.** Trimmed to about 175 words in an NBER-like shape (Brett, 18 Oct): question, test, data, findings, the one concession, the limit. The qualifications the review asked for (term-of-office *once*, the genitive, *Poor everybody!*) are carried by §1, not the abstract.
+- **Review.** `reviews/muse-sec1-20261018-115811/` (MUSE.md, TRIAGE.md, manifest.yaml).
+
+## §8 as drafted (18 Oct, `drafts/conclusion.tex`; revised after the muse review the same day)
+
+- **What it does.** Restates the criterion and its result under the three commitments: no property of form requiring a second function where CGEL fuses an NP's head with its determiner or a modifier, or in *once*, *twice*, *thrice* (term-of-office uses as ordinary modifiers); the same head relation for *few* in all four uses; the one concession. Then noun-phrase fused relatives, "favoured though not forced". Then one paragraph on the companion classification: the change of category goes where a determinative heads the nominal, on both analyses and only there (not *the rich*); the proper-name parallel (no determiner in the primary use; *the few who did* as a secondary use, CGEL pp. 520–521); *a special someone* and conversion (p. 423 n. 43); independence.
+- **For the taxonomic paper.** Its header comment cites "the structural paper's §11 ('If determinatives are nouns')" as a payoff. It's now §8's third paragraph; the comment needs updating.
+- **Length.** About 415 words against 300.
+- **Review.** `reviews/muse-sec8-20261018-124530/` (MUSE.md, TRIAGE.md, manifest.yaml).
+
+## Venue limits (*JL*, checked 18 Oct 2026 on Cambridge's "Preparing your materials" page)
+
+- **Length:** research articles "Maximum 15,000 words, including references, footnotes and any appendices"; longer needs a case in the cover letter. On 18 Oct the drafts ran to about 13,970 words (main text 10,670 with the abstract, notes 2,320, figure and table text 970), plus about 430 words of references in the test build: about 14,400 in all. The structure plan's own target is 10,000 words of main text.
+- **Abstract:** "about 200 words" (now about 200).
+- **Anonymity:** "The paper must be anonymous"; citations to the author's own work stay but in the third person, and repository materials need anonymized view-only links. So "In separate work I argue" (§8) needs a third-person version in the review copy, and the EVIDENCE.md links need an anonymized view. A submission-stage venue decision record is still owed (`Project-Management/templates/venue-decision-record.md`).

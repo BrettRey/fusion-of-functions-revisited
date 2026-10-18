@@ -127,4 +127,8 @@ The first version's bullets:
   1. *Syntactic Gradience: The Nature of Grammatical Indeterminacy* (Oxford University Press, 2007), DOI 10.1093/oso/9780199219261.001.0001, pp. 129–136. Wikipedia's *English adjectives* page attributes to these pages an empty-head analysis of *the very poor*. The copy in `literature/` is a 43-page excerpt that doesn't include them.
   2. Zhen Wu, *Exocentric Noun Phrases in English* (UCL PhD thesis, 2021, supervised by Aarts), https://discovery.ucl.ac.uk/id/eprint/10118908/. It covers *the rich* and fused relatives and argues against a unified account. UCL's site blocks automated access, so it needs opening in a browser.
 
+  3. Added 18 Oct: Wu's article from the thesis, "Compound pronouns in English", *English Language and Linguistics* 25(4), 825–849, DOI 10.1017/S1360674320000386. It analyses *someone*, *nothing* and the like as "compound phrases" (morphologically compounds, syntactically phrases), which bears on §3's compounds and §5's morphology paragraph.
+
+  Checked 18 Oct: the excerpt's §7.4.2.6 (pp. 189–192) treats fusion descriptively, as the most integrated kind of "mixed" structure. It covers Matthews's fused constructions (p. 189), CGEL's tree for a fused relative (p. 190), and CGEL's fused determiner-head and modifier-head (p. 191). Nothing there anticipates ordinary Head or empty heads. §1 has a comment marking where Wu (2021) goes once it's read.
+
   Once these are read, §2's footnote will cite them and Aarts's Substack post ("What the hell is a determiner?", 14 Dec 2024), and will say in one sentence what his account and ordinary Head share and where they differ.

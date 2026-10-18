@@ -21,7 +21,7 @@ $(SUBMISSION_PDF): $(MAIN).pdf
 endif
 
 # Full build sequence with bibliography
-$(MAIN).pdf: $(MAIN).tex references.bib $(wildcard references-local.bib) $(wildcard sections/*.tex) $(wildcard figures/*.pdf)
+$(MAIN).pdf: $(MAIN).tex references.bib $(wildcard references-local.bib) $(wildcard sections/*.tex) $(wildcard drafts/*.tex) $(wildcard figures/*.pdf)
 	@echo "==> First LaTeX pass..."
 	$(LATEX) -output-directory=$(OUTDIR) $(MAIN).tex
 	@echo "==> Running Biber..."
