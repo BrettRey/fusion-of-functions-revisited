@@ -1,11 +1,11 @@
 # CLAUDE.md
-<!-- SUMMARY: Agent guidance for Fusion of functions revisited: Independent determinatives in English; deliberately short, points at the portfolio rules rather than copying them · status: active · updated: 2026-09-02 -->
+<!-- SUMMARY: Agent guidance for Fusion of functions revisited: When does a head have a second function?; deliberately short, points at the portfolio rules rather than copying them · status: active · updated: 2026-09-02 -->
 
 Guidance for Claude Code, Codex, and other agents working in this repository.
 
 ## Project
 
-Academic paper: **Fusion of functions revisited: Independent determinatives in English**, by Brett Reynolds.
+Academic paper: **Fusion of functions revisited: When does a head have a second function?**, by Brett Reynolds.
 
 ## This file is deliberately short
 

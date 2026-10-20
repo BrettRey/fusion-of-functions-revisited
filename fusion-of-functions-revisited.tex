@@ -16,15 +16,18 @@
 % of an example, and brackets are never slanted unless part of the mentioned original
 \newcommand{\bk}[1]{\textup{[}#1\textup{]}}
 \newcommand{\pn}[1]{\textup{(}#1\textup{)}}
+% Underlining marks the constituent CGEL treats as fused, as in CGEL p. 332 (brackets enclose the NP)
+\usepackage[normalem]{ulem}
+\newcommand{\fu}[1]{\uline{#1}}
 \forestset{head edge/.style={edge={line width=1pt}}, nominal tree/.style={for tree={align=center, parent anchor=south, child anchor=north, l sep=5mm, s sep=4mm, inner sep=1.5pt}}}
 
 % Update PDF metadata
 \hypersetup{
-  pdftitle={Fusion of functions revisited: Independent determinatives in English},
-  pdfkeywords={determinatives, fused heads, headedness, noun phrase, quantifiers, English grammar}
+  pdftitle={Fusion of functions revisited: When does a head have a second function?},
+  pdfkeywords={determinatives, fused heads, free relatives, headedness, noun phrase, quantifiers, English grammar}
 }
 
-\title{Fusion of functions revisited: Independent determinatives in English}
+\title{Fusion of functions revisited: When does a head have a second function?}
 \author{Brett Reynolds \orcidlink{0000-0003-0073-7195}%
 \thanks{Contact: \href{mailto:brett.reynolds@humber.ca}{brett.reynolds@humber.ca}}\\
 Humber Polytechnic \& University of Toronto}
@@ -41,7 +44,7 @@ Humber Polytechnic \& University of Toronto}
 
 \input{drafts/abstract.tex}
 
-\noindent\textbf{Keywords:} determinatives; fused heads; headedness; noun phrase; quantifiers; English grammar
+\noindent\textbf{Keywords:} determinatives; fused heads; free relatives; headedness; noun phrase; quantifiers; English grammar
 
 % AI-use disclosure, on page 1 (house style). Provisional list carried over from
 % the combined manuscript; for JL, also describe the corpus-line classification in
