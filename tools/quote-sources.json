@@ -1,0 +1,33 @@
+{
+  "_comment": "Local copies of the sources this paper quotes, by citation key, and the prose labels the paper uses for them. Paths are relative to the portfolio's literature/ folder. Checked 2026-10-23.",
+  "labels": {
+    "CGEL": {
+      "pattern": "\\\\textit\\{CGEL\\}",
+      "key": "huddleston2002"
+    },
+    "PHP": {
+      "pattern": "\\bPHP\\b",
+      "key": "Payne2007"
+    }
+  },
+  "files": {
+    "huddleston2002": "00-CGEL.pdf",
+    "Payne2007": "Payne_Huddleston_Pullum_2007_Fusion.pdf",
+    "bresnan1978free": "bresnan-grimshaw-1978-syntax-of-free-relatives.pdf",
+    "gisborne2026mutual": "gisborne-2026-mutual-dependency-wh-clauses-word-grammar.pdf",
+    "glass2019": "glass-2019-adjectives-relate-individuals-to-states.pdf",
+    "grosu-2003-unified-theory-tfrs": "grosu-2003-unified-theory-standard-transparent-free-relatives.pdf",
+    "kim-2017-free-relatives": "kim-2017-mixed-properties-matching-effects-free-relatives.pdf",
+    "matthews2014": "matthews_2014_positions_of_adjectives_in_english.pdf",
+    "quirk1985": "quirk-et-al-1985-comprehensive-grammar-of-the-english-language.pdf",
+    "vanriemsdijk-2006-free-relatives": "vanriemsdijk-2006-free-relatives.pdf",
+    "vonfintel1994": "vonfintel-1994-restrictions-on-quantifier-domains.pdf",
+    "wu2021exocentric": "wu-2021-exocentric-noun-phrases-english-thesis.pdf"
+  },
+  "offsets": {
+    "_comment": "printed page = PDF page index + offset, read off the PDFs on 2026-10-23; used instead of running-head voting where given",
+    "huddleston2002": -20,
+    "Payne2007": 564,
+    "matthews2014": -11
+  }
+}
