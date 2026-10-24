@@ -1,5 +1,5 @@
 # Evidence index: Fusion of functions revisited
-<!-- SUMMARY: the record behind each corpus claim in the structural paper, with links into the shared evidence repository; the paper links here once, from §2's note on data · status: current for the 23 Oct drafts; records for 23 Oct not yet pushed · updated: 2026-10-23 -->
+<!-- SUMMARY: the record behind each corpus claim in the structural paper, with links into the shared evidence repository; the paper links here once, from §2's note on data · status: current for the 23 Oct drafts; all records pushed · updated: 2026-10-23 -->
 
 This paper keeps no corpus data of its own. Every record is in the evidence repository shared with the companion paper on the categorization of determinatives: <https://github.com/BrettRey/determinatives-as-nouns>. Each link below goes to one record in that repository.
 
